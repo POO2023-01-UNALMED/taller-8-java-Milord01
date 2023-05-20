@@ -44,8 +44,7 @@ public void setNombre(String nombre) {
 
 //comparar
 @Override
-	public int compareTo(Futbolista o) {
-	
+public int compareTo(Futbolista o) {
 	 return 0;
 }
 	
