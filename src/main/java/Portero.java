@@ -3,9 +3,8 @@ package futbol;
 public class Portero extends Futbolista{
 	public short golesRecibidos;
 	public byte dorsal;
-	public final String posicion="Portero";
 
-	public Portero (short golesR, byte dorsal,String nombre, int edad, String posicion) {
+	public Portero (String nombre, int edad, String posicion, short golesR, byte dorsal) {
 		 super(nombre, edad, posicion);
 		 this.dorsal=dorsal;
 		 this.golesRecibidos=golesR;
