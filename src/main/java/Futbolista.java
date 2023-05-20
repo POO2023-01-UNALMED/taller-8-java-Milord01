@@ -18,7 +18,7 @@ public Futbolista() {
 }
 //equals
 public boolean equals(Futbolista f) {
-	return false;}
+	return (this==f);}
 
 //Manos
 public abstract boolean jugarConLasManos();
@@ -43,7 +43,11 @@ public void setNombre(String nombre) {
 }
 
 //comparar
-
+@Override
+	public int compareTo(Futbolista o) {
+	
+		return 0;
+	}
 
 
 //toString
