@@ -1,6 +1,6 @@
 package futbol;
 
-public abstract class Portero extends Futbolista{
+public class Portero extends Futbolista{
 	public short golesRecibidos;
 	public byte dorsal;
 	public final String posicion="Portero";
