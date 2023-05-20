@@ -21,8 +21,11 @@ public Jugador () {
 
 //comparar
 @Override
-	public int compareTo(Futbolista o) {
-		return super.compareTo(o);
+	public int compareTo(Futbolista jugador) {
+	int d=getEdad()-jugador.getEdad();
+		return Math.abs(d);
+
+//return super.compareTo(jugador);
 	}
 
 //manos
@@ -31,6 +34,7 @@ public Jugador () {
 		return false;
 }
 
+//set y get
 public byte getDorsal() {
 	return dorsal;
 }
@@ -43,6 +47,11 @@ public void setGolesMarcados(short golesMarcados) {
 }
 public void setDorsal(byte dorsal) {
 	this.dorsal = dorsal;
+}
+
+//toString
+public String toString(){
+    return "El futbolista" +getNombre()+ " tiene "+getEdad()+ ", y juega de "+getPosicion()+"con el dorsal"+ getDorsal()+". Ha marcado"+getGolesMarcados();
 }
 }
 

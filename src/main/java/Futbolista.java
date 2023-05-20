@@ -45,12 +45,14 @@ public void setNombre(String nombre) {
 //comparar
 @Override
 	public int compareTo(Futbolista o) {
-		return 0;
-	}
+	
+	 return 0;
+}
+	
 
 //toString
 @Override
 public String toString(){
-    return "El futbolista" +nombre+ " tiene "+edad+ ", y juega de "+posicion;
+    return "El futbolista" +getNombre()+ " tiene "+getEdad()+ ", y juega de "+getPosicion();
 }
 }

@@ -17,8 +17,9 @@ public boolean jugarConLasManos() {
 }
 
 @Override
-public int compareTo(Futbolista o) {
-	return super.compareTo(o);
+public int compareTo(Futbolista portero) {
+	int d=this.golesRecibidos-((Portero) portero).getGolesRecibidos();
+	return Math.abs(d);
 }
 
 public byte getDorsal() {
@@ -35,4 +36,8 @@ public void setGolesRecibidos(short golesRecibidos) {
 	this.golesRecibidos = golesRecibidos;
 }
 
+//toString
+public String toString(){
+  return "El futbolista" +getNombre()+ " tiene "+getEdad()+ ", y juega de "+getPosicion()+"con el dorsal"+ getDorsal()+". Le han marcado"+getGolesRecibidos();
+}
 }
